@@ -1,33 +1,33 @@
 {
-  "visibility": false,
-  "title": "This is the title of the project",
+  "visibility": true,
+  "title": "Mixed reality based simulation platform for Swarm Robotics",
   "team": [
     {
-      "name": "Team Member Name 1",
-      "email": "email@eng.pdn.ac.lk",
-      "eNumber": "E/yy/xxx"
+      "name": "Jaliyagoda A.J.N.M.",
+      "email": "nuwanjaliyagoda@eng.pdn.ac.lk",
+      "eNumber": "E/15/140"
     },
     {
-      "name": "Team Member Name 2",
-      "email": "email@eng.pdn.ac.lk",
-      "eNumber": "E/yy/xxx"
+      "name": "Jayalath A.H.G.D.",
+      "email": "ganindudananja@gmail.com",
+      "eNumber": "E/15/142"
     },
     {
-      "name": "Team Member Name 3",
-      "email": "email@eng.pdn.ac.lk",
-      "eNumber": "E/yy/xxx"
+      "name": "Karunarathna S.D.D.D.",
+      "email": "dinelkadilshani95@gmail.com",
+      "eNumber": "E/15/173"
     }
   ],
   "supervisors": [
     {
-      "name": "Dr. Supervisor 1",
-      "email": "email@eng.pdn.ac.lk"
+      "name": "Dr. Isuru Nawinne",
+      "email": "isurunawinne@eng.pdn.ac.lk"
     },
     {
-      "name": "Supervisor 2",
-      "email": "email@eng.pdn.ac.lk"
+      "name": "Prof. Roshan Ragel",
+      "email": "roshanr@eng.pdn.ac.lk"
     }
   ],
-  "description": "This is a breif intruduction of the project. You need to use plain text without any specific characters here",
-  "tags": ["Web", "Embedded Systems"]
+  "description": "The main objective of this project is to implement a mixed reality-based simulator application with an efficient and reliable architecture for allowing both physical and virtual robots to collaboratively run swarm intelligence based algorithms in real-time",
+  "tags": ["Robotics", "Research"]
 }

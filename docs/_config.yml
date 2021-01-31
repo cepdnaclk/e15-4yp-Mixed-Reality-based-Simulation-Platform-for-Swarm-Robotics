@@ -1,10 +1,9 @@
 # This theme is based on https://github.com/jekyll/minima
 # Please refer above link to know the available configurations
 
-title: ""
+title: "Mixed Reality based Simulation Platform for Swarm Robotics"
 remote_theme: cepdnaclk/eYY-project-theme
-description: "Github Page Template"
-markdown: kramdown
+description: "The main objective of this project is to implement a mixed reality-based simulator application with an efficient and reliable architecture for allowing both physical and virtual robots to collaboratively run swarm intelligence based algorithms in real-time"
 
 kramdown:
   parse_block_html: true
