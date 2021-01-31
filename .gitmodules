@@ -1,0 +1,15 @@
+[submodule "robot-firmware"]
+	path = robot-firmware
+	url = https://github.com/Pera-Swarm/firmware
+[submodule "visualizer"]
+	path = visualizer
+	url = https://github.com/Pera-Swarm/visualizer
+[submodule "localization"]
+	path = localization
+	url = https://github.com/cepdnaclk/swarm-robotics-localization
+[submodule "hardware"]
+	path = hardware
+	url = https://github.com/Pera-Swarm/hardware
+[submodule "swarm-sandbox"]
+	path = swarm-sandbox
+	url = https://github.com/Pera-Swarm/sandbox
