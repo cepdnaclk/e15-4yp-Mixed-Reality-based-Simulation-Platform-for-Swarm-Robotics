@@ -58,15 +58,19 @@ Virtual reality describes the simulation of a synthetic environment similar to t
 Milgram’s scale represents the real environment and the virtual environment at the ends while introducing a new concept known as Mixed Reality (MR) in the middle. According to Milgram’s diagram, there are two broad areas, Augmented Reality (AR) and Augmented Virtuality (AV) which belong to the MR. However, the medium that represented a combination of real and virtual environments mostly known as AR rather than MR.
 
 ## Methodology
+(will be updated soon)
 
 ## Experiment Setup and Implementation
+(will be updated soon)
 
 ## Results and Analysis
+(will be updated soon)
 
 ## Conclusion
+(will be updated soon)
 
 ## Links
-
+- [GitHub Organization](https://github.com/pera-swarm){:target="\_blank"}
 - [Project Repository](https://github.com/cepdnaclk/{{ page.repository-name }}){:target="\_blank"}
 - [Project Page](https://cepdnaclk.github.io/{{ page.repository-name}}){:target="\_blank"}
 - [Department of Computer Engineering](http://www.ce.pdn.ac.lk/){:target="\_blank"}
