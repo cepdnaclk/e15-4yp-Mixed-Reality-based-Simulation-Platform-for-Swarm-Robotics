@@ -70,7 +70,7 @@ Milgram’s scale represents the real environment and the virtual environment at
 (will be updated soon)
 
 ## Links
-- [GitHub Organization](https://github.com/pera-swarm){:target="\_blank"}
+- [pera-swarm - GitHub Organization](https://github.com/pera-swarm){:target="\_blank"}
 - [Project Repository](https://github.com/cepdnaclk/{{ page.repository-name }}){:target="\_blank"}
 - [Project Page](https://cepdnaclk.github.io/{{ page.repository-name}}){:target="\_blank"}
 - [Department of Computer Engineering](http://www.ce.pdn.ac.lk/){:target="\_blank"}
