@@ -52,7 +52,7 @@ This has been a new approach to the coordination of mass of robots that are capa
 When it comes to swarm robots, this concept has been derived from the behavioral patterns of creatures like ants, wasps, locusts, termites, bees, fishes, turtles and birds (Figure 1.1). Swarming is seen as a behavioral pattern because they move together in search of food and shelter to survive from predator attacks. That is since the discrete individuals have a higher chance of surviving in the group than being alone. Swarming results in responding to the speed of their peers to avoid collisions within the swarm by communicating with each other while maintaining a decentralized network and exhibiting self-organized behavior. The goal of these creatures in swarms is basically to ensure the process of solving problems more efficiently through cooperation and division of labor which is being modified and infused into swarm robotic technology.
 
 <div class="figure">
-<img src="/figs/swarms" alt="Examples of diverse creatures in swarms" width="415" />
+<img src="../figs/swarms" alt="Examples of diverse creatures in swarms" width="415" />
 <p class="caption">Figure 1.1 Examples of diverse creatures in swarms
 	<span class="citation"></span><span data-label="fig:swarms"></span></p>
 </div>
@@ -119,7 +119,7 @@ In the development and testing life cycle, the actual operations in MR environme
 
 Virtual swarm robots are often very useful to perform simulation prior to the investigation of real robots. Simulations are easier to set up, less expensive, normally faster and more convenient to use than physical swarms. Virtual swarm robots need a simulator to interpret the changes and the movements of each robot and also to test the swarm intelligence-based algorithms. The two main requirements in virtual swarm robot simulators are the flexibility to add new features and efficiency. There are many simulation platforms like Player, Stage, Gazebo etc. 
 
-#####Mixed reality in Swarm Robots
+##### Mixed reality in Swarm Robots
 
 MR is a relatively refreshing and new area of technology although many implementations and experiments have been carried out over the past years. It can be categorized under an expanding field of expertise due to its promising potential for a large number of applications in various fields and purposes comprising testing state-of-the-art computer architectural systems, process optimizations, training and testing of hardware components for Machine Learning applications, etc. The immense interests in many researchers for MR are almost related to robotics, especially Multi-Robotic systems and Swarm Robotic systems. In particular, MR based robotic development will require additional attention to detail for tasks including collaboration between robots, additive manufacturing and other related manufacturing tasks to achieve interfacing, programming related outcomes in software level and functionalities.
  
