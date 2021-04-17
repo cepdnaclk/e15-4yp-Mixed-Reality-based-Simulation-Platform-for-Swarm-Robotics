@@ -52,7 +52,7 @@ This has been a new approach to the coordination of mass of robots that are capa
 When it comes to swarm robots, this concept has been derived from the behavioral patterns of creatures like ants, wasps, locusts, termites, bees, fishes, turtles and birds (Figure 1.1). Swarming is seen as a behavioral pattern because they move together in search of food and shelter to survive from predator attacks. That is since the discrete individuals have a higher chance of surviving in the group than being alone. Swarming results in responding to the speed of their peers to avoid collisions within the swarm by communicating with each other while maintaining a decentralized network and exhibiting self-organized behavior. The goal of these creatures in swarms is basically to ensure the process of solving problems more efficiently through cooperation and division of labor which is being modified and infused into swarm robotic technology.
 
 <div class="figure">
-<img src="../figs/swarms.png" alt="Examples of diverse creatures in swarms" width="415" />
+<img src="./figs/swarms.png" alt="Examples of diverse creatures in swarms" width="415" />
 <p class="caption">Figure 1.1 Examples of diverse creatures in swarms
 	<span class="citation"></span><span data-label="fig:swarms"></span></p>
 </div>
@@ -78,9 +78,6 @@ Virtual reality has been used in flight simulation training for pilots, procedur
  
 The Virtual Fixture System which was invented by Armstrong Laboratory located in Arlington, Texas, USA presented a Mixed Reality (MR) incorporating features of the sight, sound, and touch. Later Milgram and Kishino introduced the “virtuality continuum” concept that linked the real and the virtual world (Figure 1.2). Milgram's scale represents the real environment and the virtual environment at the ends while introducing a new concept known as Mixed Reality (MR) in the middle. According to Milgram's diagram, there are two broad areas, Augmented Reality (AR) and Augmented Virtuality (AV) which belong to the MR. However, the medium that represented a combination of real and virtual environments mostly known as AR rather than MR.
 
-<img src="https://user-images.githubusercontent.com/11540782/106385180-e03a0180-63f4-11eb-8a31-e5d4b72d5b80.png" alt="Milgram’s Reality–Virtuality continuum" style="max-width: 200px;">
-<br><b>Figure 1.2 Milgram’s Reality–Virtuality continuum</b><br><br>
-
 <div class="figure">
 <img src="./figs/RV-continuum.png" alt="Milgram’s Reality–Virtuality continuum" width="377" />
 <p class="caption">Figure 1.2 Milgram’s Reality–Virtuality continuum<span data-label="fig:RV_continuum"></span></p>
@@ -89,7 +86,7 @@ The Virtual Fixture System which was invented by Armstrong Laboratory located in
 When it comes to Mixed Reality (MR), it has been originally derived from Virtual Reality (VR) not only conceptually but historically as well. Here, both the physical environment around them and digital elements presented are distinguished by users, for example, the use of semitransparent displays. When designing MR systems, users are provided with the illusion that digital objects are in the same space as physical ones. By sensing those physical interactions, it provides interactive feedback to the users.
 
 <div class="figure">
-<img src="/figs/realities.png" alt="Milgram’s continuum with examples from Media Convergence Laboratory projects.  Left to right: Physical reality, Augmented reality, Augmented virtuality, Virtual reality" width="453" />
+<img src="./figs/realities.png" alt="Milgram’s continuum with examples from Media Convergence Laboratory projects.  Left to right: Physical reality, Augmented reality, Augmented virtuality, Virtual reality" width="453" />
 <p class="caption">Figure 1.3 Milgram’s continuum with examples from Media Convergence Laboratory projects. <span class="citation"></span> Left to right: Physical reality, Augmented reality, Augmented virtuality, Virtual reality<span data-label="fig:realities"></span></p>
 </div>
 
@@ -179,14 +176,14 @@ Our proposed system consists of several parts as listed below;
 In a nutshell, the overall Mixed Reality Simulation platform (Figure 2.1) is a collection of several decentralized and distributed components which are connected with each other by various aspects including reality, communication mode (synchronous or asynchronous), visualization, etc.
 
 <div class="figure">
-<img src="/figs/architecture_summary" alt="Overall Abstract System Architecture" width="377" />
+<img src="./figs/architecture_summary.png" alt="Overall Abstract System Architecture" width="377" />
 <p class="caption">Figure 2.1 Overall Abstract System Architecture<span data-label="fig:architecture_summary"></span></p>
 </div>
 
 A simple block diagram of the whole mixed reality simulator system is shown in Figure 2.2. Physical robots and Virtual robots communicate with the simulator back and forth via MQTT protocol. Also, both Physical and Virtual robots send their current states to the Visualizer to represent them in an MR environment. The visualizer renders the 3D view of the robots and obstacles of both realities. Visualizer is only a representative body and it can not take decisions and control the behaviors.
 
 <div class="figure">
-<img src="/figs/swarm_simulator_subsystems_diagram" alt="Interactions between subsystems" width="340" />
+<img src="./figs/swarm_simulator_subsystems_diagram.png" alt="Interactions between subsystems" width="340" />
 <p class="caption">Figure 2.2 Interactions between subsystems<span data-label="fig:diagram_subsystems"></span></p>
 </div>
 
@@ -206,7 +203,7 @@ Physical robots have physical motors and wheels. There are functions in robot fi
 	<span class="math display">d&#934; = (R/2)*(V<sub>R</sub> - V<sub>L</sub>)</span><br /></p>
 
 <div class="figure">
-<img src="/figs/differentialDrive" alt="X and Y coordinate change with given speeds for left and right motors" width="302" />
+<img src="./figs/differentialDrive.png" alt="X and Y coordinate change with given speeds for left and right motors" width="302" />
 <p class="caption">Figure 2.3 X and Y coordinate change with given speeds for left and right motors<span data-label="fig:differentialDrive"></span></p>
 </div>
 
@@ -217,7 +214,7 @@ We recognized that there must be an accurate and effective way to track the move
 Physical robots have an AR marker on top of them. An overhead camera was set up on top of the physical simulation environment as shown in the Figure 2.4. The localization data (x coordinate, y coordinate and the heading direction) are calculated based on the video feed and mapped into the MR simulator environment with the aid of the AR library of the OpenCV. Then the coordinate data will be sent to the simulator via a predefined MQTT topic, as an event-triggered update for each and every individual physical robot. This updated event will be triggered only if the robot moved or rotated than a given threshold value.
 
 <div class="figure">
-<img src="/figs/localization_system_image" alt="Localization system on the physical arena" width="340" />
+<img src="./figs/localization_system_image.png" alt="Localization system on the physical arena" width="340" />
 <p class="caption">Figure 2.4 Localization system on the physical arena<span data-label="fig:localization_system_image"></span></p>
 </div>
 
@@ -244,7 +241,7 @@ For the defined obstacles, it is possible to implement the above-mentioned metho
 the behaviors using geometry.
 
 <div class="figure">
-<img src="/figs/wallObstacle" alt="Obstacles in MR visualizer" width="491" />
+<img src="./figs/wallObstacle.png" alt="Obstacles in MR visualizer" width="491" />
 <p class="caption">Figure 2.5 Obstacles in MR visualizer<span data-label="fig:wallObstacle"></span></p>
 </div>
 
@@ -279,7 +276,7 @@ Physical robots can not sense the virtual robots and virtual obstacles from thei
 The simulator contains the data on both realities and feeds the required details to the robots. Physical robots get the physical sensor readings of physical obstacles by their inbuilt sensors and virtual sensor readings of virtual obstacles through the simulator. Then it takes the minimum of those readings and detects the closest obstacle as in the Figure 2.6. Besides, virtual robots will request the sensor reading of both realities and the simulator reacts accordingly.
 
 <div class="figure">
-<img src="/figs/figure_mixed_reality" alt="Augmented sensing in simulation" width="453" />
+<img src="./figs/figure_mixed_reality.png" alt="Augmented sensing in simulation" width="453" />
 <p class="caption">Figure 2.6 Augmented sensing in simulation<span data-label="fig:figure_mixed_reality"></span></p>
 </div>
 
@@ -301,7 +298,7 @@ Furthermore, we are concerned about the research aspect of the mixed reality env
 We identified several types of sensors that help to identify the properties of the environment and the behaviors of the robot itself. After considering a lot of possible designs we selected the following design (Figure 3.1) for the swarm robots. The round shape helps robots to tolerate the collisions (no any entanglements possible) and the special flattened edge of the back helps to identify the orientation of the robot from any view. 
 
 <div class="figure">
-<img src="/figs/physical_robot" alt="Overview of the Physical Robot" width="453" />
+<img src="./figs/physical_robot.png" alt="Overview of the Physical Robot" width="453" />
 <p class="caption">Figure 3.1 Overview of the Physical Robot<span data-label="fig:physical_robot"></span></p>
 </div>
 
@@ -327,7 +324,7 @@ In the front bottom of the robot, there is a DIP switch with 2 toggle switches. 
 Virtual robots were implemented as virtual swarm nodes using java language. The robot class constructor has two attributes, an Id and the reality to differentiate the two types by the simulator. Also, there are some methods as stated in the diagram below (Figure 3.2). We created virtual robots by extending those features and included other features such as sensor interrupts and communication interrupts which needed to be built only for virtual robots as an abstract interface in software level since physical robots have implemented them in the hardware level. Then those methods can be overridden and can be implemented with the desired functionality according to the requirements of different swarm algorithms.  
 
 <div class="figure">
-<img src="/figs/virtual_robot" alt="Class diagram of the virtual robot" width="415" />
+<img src="./figs/virtual_robot.png" alt="Class diagram of the virtual robot" width="415" />
 <p class="caption">Figure 3.2 Class diagram of the virtual robot<span data-label="fig:virtual_robot"></span></p>
 </div>
 
@@ -359,7 +356,7 @@ Considering the possibility of easy modification, it was developed by following 
 The simulator application uses the modules from the JavaScript libraries “pera-swarm” and “@pera-swarm/mqtt-router” (Library_Implementation Section) to address the swarm logic and other functional level requirements. The libraries were implemented for the general swarm robotic use case and are open for improvements to address specific swarm behavioral requirements for researchers.
 
 <div class="figure">
-<img src="/figs/swarm_server_architecture_diagram" alt="Swarm Simulator - UML Overview" width="415" />
+<img src="./figs/swarm_server_architecture_diagram.png" alt="Swarm Simulator - UML Overview" width="415" />
 <p class="caption">Figure 3.3 Swarm Simulator - UML Overview<span data-label="fig:swarm_server_architecture_diagram"></span></p>
 </div>
 
@@ -399,7 +396,7 @@ The simulator platform needed to be represented in a seamless way that the chang
 - A small statistical tool to display the performance metrics (e.g.: FPS counter, visual latency, etc.) of the visualizer application.
 
 <div class="figure">
-<img src="/figs/visualizer_screenshot" alt="A Screenshot of the Mixed Reality Visualizer" width="340" />
+<img src="./figs/visualizer_screenshot.png" alt="A Screenshot of the Mixed Reality Visualizer" width="340" />
 <p class="caption">Figure 3.4 A Screenshot of the Mixed Reality Visualizer<span data-label="fig:visualizer_screenshot"></span></p>
 </div>
 
@@ -444,7 +441,7 @@ The library implementation followed the module abstraction to maintain coherence
 In the inherited obstacle entities (Wall, Box, etc) there is a method named “geometric()”, which returns the geometric properties of the obstacle and a method named “visualize()” which returns how the obstacle should be rendered in the mixed reality visualizer, based on a predefined schema. Schema allows users to define a list of primitive objects with their own geometric properties, material properties and positioning options.
 
 <div class="figure">
-<img src="/figs/pera_swarm_library_architecture" alt="pera-swarm - Library Architecture" width="529" />
+<img src="./figs/pera_swarm_library_architecture.png" alt="pera-swarm - Library Architecture" width="529" />
 <p class="caption">Figure 3.5 “pera-swarm” - Library Architecture<span data-label="fig:simulator_architecture"></span></p>
 </div>
 
@@ -453,7 +450,7 @@ The above described abstract classes and interfaces were identified according to
 In addition to the “pera-swarm” library, we have also developed an MQTT router implementation named “@pera-swarm/mqtt-router” (https://github.com/Pera-Swarm/mqtt-router). The communication between the swarm server and each virtual robot instance are to be handled via this library as it consists of a message queue implementation and flexible routing functionality to handle each relevant message endpoint in the protocol stack.
 
 <div class="figure">
-<img src="/figs/mqtt_router_block_diagram" alt="@pera-swarm/mqtt-router Block Diagram" width="340" />
+<img src="./figs/mqtt_router_block_diagram.png" alt="@pera-swarm/mqtt-router Block Diagram" width="340" />
 <p class="caption">Figure 3.6 “@pera-swarm/mqtt-router” Block Diagram<span data-label="fig:mqtt_router_block_diagram"></span></p>
 </div>
 
@@ -477,7 +474,7 @@ We chose MQTT (Message Queuing Telemetry Transport) as the primary way of commun
 The Figure 3.7 contains a few communication channels we implemented.
 
 <div class="figure">
-<img src="/figs/mqtt_protocol_diagram" alt="MQTT Protocols on robot localization" width="415" />
+<img src="./figs/mqtt_protocol_diagram.png" alt="MQTT Protocols on robot localization" width="415" />
 <p class="caption">Figure 3.7 MQTT Protocols on robot localization<span data-label="fig:mqtt_protocol_diagram"></span></p>
 </div>
 
@@ -487,7 +484,7 @@ Swarm communication is an important area of swarm behavioral research, consideri
 Physical robots can have hardware support for the communication while virtual robots can have emulators for this purpose. However, with an aid of the simulator, we can easily define entire virtual communication methods, without depending on the expensive hardware modules, but more similar to the real hardware functionalities. Therefore, we implemented two entire virtual communication modules; simple communication and directed communication.
 
 <div class="figure">
-<img src="/figs/figure_communication" alt="Robot to robot simple communication" width="453" />
+<img src="./figs/figure_communication.png" alt="Robot to robot simple communication" width="453" />
 <p class="caption">Figure 3.8 Robot to robot simple communication<span data-label="fig:figure_communication"></span></p>
 </div>
 
@@ -503,7 +500,7 @@ The components which have been described above are distributed and decentralized
 The Pera-Swarm SandBox (v2.0 - the current stable version) is a cross-platform progressive web application (Figure 3.9) developed over a time frame to overcome these problems. The basic functionalities of the application are testing each communication protocol and validating responses, creating and managing virtual robot units within the application, building up the virtual environment with virtual obstacles, managing authentication for Visualizer so that the Visualizer will only be accessible via the generated URL. 
 
 <div class="figure">
-<img src="/figs/sandbox_home" alt="SandBox Application" width="415" />
+<img src="./figs/sandbox_home.png" alt="SandBox Application" width="415" />
 <p class="caption">Figure 3.9 SandBox Application<span data-label="fig:sandbox_home_screenshot"></span></p>
 </div>
 
@@ -549,7 +546,7 @@ Then HopID of the robot was increased by one and re-transmitted the color values
 The Figure 4.1 shows the results of one experiment done with 10 robots, which were placed in a circle. The starting message of “0 255 0 0” was given to robot number 2, and then it was indicated the Red color as shown in slide 2 of the figure. Then next two adjacent robots, robot number 3 and 1 were colored in red, as shown in slide 3, while robot 1 turned off its own red color. The same procedure was continued by other robots as shown in other slides. 
 
 <div class="figure">
-<img src="/figs/color_ripple" alt="Results on Color Ripple Experiment" width="491" />
+<img src="./figs/color_ripple.png" alt="Results on Color Ripple Experiment" width="491" />
 <p class="caption">Figure 4.1 Results on Color Ripple Experiment<span data-label="fig:color_ripple"></span></p>
 </div>
 
@@ -564,7 +561,7 @@ In this experiment, all ten robots were assigned into fixed coordinates and aske
 Initially, this experiment was started with five physical robots and five virtual robots. Then for each next trial, one physical robot was removed and replaced by a virtual robot. The experiment was continued until all the robots in the experiment became virtual robots, and the behaviors of the robots were recorded for analytical purposes.
 
 <div class="figure">
-<img src="/figs/findObstacleExperiment" alt="Mixed reality and physical setups of the experiment" width="491" />
+<img src="./figs/findObstacleExperiment.png" alt="Mixed reality and physical setups of the experiment" width="491" />
 <p class="caption">Figure 4.2 Mixed reality and physical setups of the experiment<span data-label="fig:findObstacleExperiment"></span></p>
 </div>
 
