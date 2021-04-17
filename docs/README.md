@@ -241,7 +241,7 @@ For the defined obstacles, it is possible to implement the above-mentioned metho
 the behaviors using geometry.
 
 <div class="figure">
-<img src="./figs/wallObstacle.pdf" alt="Obstacles in MR visualizer" width="491" />
+<img src="./figs/wallObstacle.png" alt="Obstacles in MR visualizer" width="491" />
 <p class="caption">Figure 2.5 Obstacles in MR visualizer<span data-label="fig:wallObstacle"></span></p>
 </div>
 
