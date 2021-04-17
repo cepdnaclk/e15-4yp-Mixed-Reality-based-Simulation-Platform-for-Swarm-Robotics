@@ -183,7 +183,7 @@ In a nutshell, the overall Mixed Reality Simulation platform (Figure 2.1) is a c
 A simple block diagram of the whole mixed reality simulator system is shown in Figure 2.2. Physical robots and Virtual robots communicate with the simulator back and forth via MQTT protocol. Also, both Physical and Virtual robots send their current states to the Visualizer to represent them in an MR environment. The visualizer renders the 3D view of the robots and obstacles of both realities. Visualizer is only a representative body and it can not take decisions and control the behaviors.
 
 <div class="figure">
-<img src="./figs/swarm_simulator_subsystems_diagram.png" alt="Interactions between subsystems" width="340" />
+<img src="./figs/swarm_simulator_subsystems_diagram.jpg" alt="Interactions between subsystems" width="340" />
 <p class="caption">Figure 2.2 Interactions between subsystems<span data-label="fig:diagram_subsystems"></span></p>
 </div>
 
@@ -298,7 +298,7 @@ Furthermore, we are concerned about the research aspect of the mixed reality env
 We identified several types of sensors that help to identify the properties of the environment and the behaviors of the robot itself. After considering a lot of possible designs we selected the following design (Figure 3.1) for the swarm robots. The round shape helps robots to tolerate the collisions (no any entanglements possible) and the special flattened edge of the back helps to identify the orientation of the robot from any view. 
 
 <div class="figure">
-<img src="./figs/physical_robot.png" alt="Overview of the Physical Robot" width="453" />
+<img src="./figs/physical_robot.jpg" alt="Overview of the Physical Robot" width="453" />
 <p class="caption">Figure 3.1 Overview of the Physical Robot<span data-label="fig:physical_robot"></span></p>
 </div>
 
@@ -418,7 +418,7 @@ and module
 - State Pattern: To provide the functionality of finite state machines in certain modules (e.g.: Robots)
 
 
-The library implementation followed the module abstraction to maintain coherence in each high-level module while providing the functionality to extend for further implementations in some of them. For example, one of them is the Robot module and it can be either import and use as it is or the underlying methods of the Robot module can be overridden by the developers or researchers easily. The documentation for each library module is available on the Pera-Swarm documentation website, listed in  \ref{PeraSwarmDocumentation}. Following is a brief description of a few important interfaces and abstract classes as shown in the Figure 3.5.
+The library implementation followed the module abstraction to maintain coherence in each high-level module while providing the functionality to extend for further implementations in some of them. For example, one of them is the Robot module and it can be either import and use as it is or the underlying methods of the Robot module can be overridden by the developers or researchers easily. The documentation for each library module is available on the Pera-Swarm documentation website, listed in (https://pera-swarm.ce.pdn.ac.lk/docs/). Following is a brief description of a few important interfaces and abstract classes as shown in the Figure 3.5.
 
 
 
@@ -546,7 +546,7 @@ Then HopID of the robot was increased by one and re-transmitted the color values
 The Figure 4.1 shows the results of one experiment done with 10 robots, which were placed in a circle. The starting message of “0 255 0 0” was given to robot number 2, and then it was indicated the Red color as shown in slide 2 of the figure. Then next two adjacent robots, robot number 3 and 1 were colored in red, as shown in slide 3, while robot 1 turned off its own red color. The same procedure was continued by other robots as shown in other slides. 
 
 <div class="figure">
-<img src="./figs/color_ripple.png" alt="Results on Color Ripple Experiment" width="491" />
+<img src="./figs/color_ripple.jpg" alt="Results on Color Ripple Experiment" width="491" />
 <p class="caption">Figure 4.1 Results on Color Ripple Experiment<span data-label="fig:color_ripple"></span></p>
 </div>
 
@@ -561,7 +561,7 @@ In this experiment, all ten robots were assigned into fixed coordinates and aske
 Initially, this experiment was started with five physical robots and five virtual robots. Then for each next trial, one physical robot was removed and replaced by a virtual robot. The experiment was continued until all the robots in the experiment became virtual robots, and the behaviors of the robots were recorded for analytical purposes.
 
 <div class="figure">
-<img src="./figs/findObstacleExperiment.png" alt="Mixed reality and physical setups of the experiment" width="491" />
+<img src="./figs/findObstacleExperiment.jpg" alt="Mixed reality and physical setups of the experiment" width="491" />
 <p class="caption">Figure 4.2 Mixed reality and physical setups of the experiment<span data-label="fig:findObstacleExperiment"></span></p>
 </div>
 
