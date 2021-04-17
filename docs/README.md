@@ -183,12 +183,12 @@ In a nutshell, the overall Mixed Reality Simulation platform (Figure 2.1) is a c
 A simple block diagram of the whole mixed reality simulator system is shown in Figure 2.2. Physical robots and Virtual robots communicate with the simulator back and forth via MQTT protocol. Also, both Physical and Virtual robots send their current states to the Visualizer to represent them in an MR environment. The visualizer renders the 3D view of the robots and obstacles of both realities. Visualizer is only a representative body and it can not take decisions and control the behaviors.
 
 <div class="figure">
-<img src="./figs/swarm_simulator_subsystems_diagram.jpg" alt="Interactions between subsystems" width="340" />
+<img src="./figs/swarm_simulator_subsystems_diagram.png" alt="Interactions between subsystems" width="340" />
 <p class="caption">Figure 2.2 Interactions between subsystems<span data-label="fig:diagram_subsystems"></span></p>
 </div>
 
-#### Conceptual design}
-##### Physical and Virtual Robots} 
+#### Conceptual design
+##### Physical and Virtual Robots
 
 The basic requirements of the physical robots are to be general-purpose swarm robots, which can be used for swarm intelligence behavior related experiments. Those robots should be able to move in the simulation platform and interact with other physical robots as well as with virtual robots.
 
@@ -241,11 +241,11 @@ For the defined obstacles, it is possible to implement the above-mentioned metho
 the behaviors using geometry.
 
 <div class="figure">
-<img src="./figs/wallObstacle.png" alt="Obstacles in MR visualizer" width="491" />
+<img src="./figs/wallObstacle.pdf" alt="Obstacles in MR visualizer" width="491" />
 <p class="caption">Figure 2.5 Obstacles in MR visualizer<span data-label="fig:wallObstacle"></span></p>
 </div>
 
-For example, to create a wall obstacle we need the start coordinate, orientation relating to that point and the length of the wall. When calculating the distance to the obstacle through the heading direction, first it is needed to calculate the heading angles relative to the two endpoints, P\textsubscript{1} and P\textsubscript{2} of the wall obstacle shown in the Figure 2.5.
+For example, to create a wall obstacle we need the start coordinate, orientation relating to that point and the length of the wall. When calculating the distance to the obstacle through the heading direction, first it is needed to calculate the heading angles relative to the two endpoints, P<sub>1</sub> and P<sub>2</sub> of the wall obstacle shown in the Figure 2.5.
 
 
 <p><span class="math display"><em>angle</em><sub>1</sub> = <em>Θ</em> − <em>α</em></span><br /> 
@@ -257,13 +257,13 @@ If one of them is positive and the other angle is negative we identified that th
 
 To calculate the distance, we need the line equation of the wall obstacle and also the line equation through the heading direction. It can be obtained by using this equation.
 
-<p><span class="math display"><em>sin</em>(<em>angle)*<em>x</em> − <em>cos</em>(<em>angle</em>)*<em>y</em> − <em>x</em><sub>0</sub> * <em>sin</em>(<em>angle</em>)+<em>y</em><sub>0</sub> * <em>cos</em>(<em>angle</em>)=0</span><br /></p>
+<p><span class="math display"><em>sin</em>(<em>angle</em>)*<em>x</em> − <em>cos</em>(<em>angle</em>)*<em>y</em> − <em>x</em><sub>0</sub> * <em>sin</em>(<em>angle</em>)+<em>y</em><sub>0</sub> * <em>cos</em>(<em>angle</em>)=0</span><br /></p>
 
 Then we can find the intersection point of two lines and can calculate the distance from the coordinate of the robot to the intersection point.
 
-<p><span class="math display">x= (b<sub>1</sub>*c<sub>2</sub> - b<sub>2</sub>*c<sub>1</sub>)/(a<sub>1</sub>*b<sub>2</sub>-a<sub>2</sub>*b<sub>1</sub>)</span><br /> 
-<span class="math display">y= (a<sub>2</sub>*c<sub>1</sub>-a<sub>1</sub>*c<sub>2</sub>)/(a<sub>1</sub>*b<sub>2</sub>-a<sub>2</sub>*b<sub>1</sub></span>)<br /></p>
-<p><span class="math display">distance = <span>&#8730;</span>(xDiff<sup>2</sup> + yDiff<sup>2</sup>)</span><br /></p>
+<p><span class="math display"><em>x= (b<sub>1</sub>*c<sub>2</sub> - b<sub>2</sub>*c<sub>1</sub>)/(a<sub>1</sub>*b<sub>2</sub>-a<sub>2</sub>*b<sub>1</sub>)</em></span><br /> 
+<span class="math display"><em>y= (a<sub>2</sub>*c<sub>1</sub>-a<sub>1</sub>*c<sub>2</sub>)/(a<sub>1</sub>*b<sub>2</sub>-a<sub>2</sub>*b<sub>1</sub></em></span>)<br /></p>
+<p><span class="math display"><em>distance = <span>&#8730;</span>(xDiff<sup>2</sup> + yDiff<sup>2</sup>)</em></span><br /></p>
 
 After modeling the obstacles using this method, it is possible to build the environment with the support of these obstacles. We can make virtual entities for physical existence obstacles and mark them as real obstacles, and add some virtual obstacles and mark them as virtual obstacles. Detailed explanation on how to use these obstacles with Robots will be explained in the Reality Integration Section.
 
