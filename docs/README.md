@@ -52,7 +52,7 @@ This has been a new approach to the coordination of mass of robots that are capa
 When it comes to swarm robots, this concept has been derived from the behavioral patterns of creatures like ants, wasps, locusts, termites, bees, fishes, turtles and birds (Figure 1.1). Swarming is seen as a behavioral pattern because they move together in search of food and shelter to survive from predator attacks. That is since the discrete individuals have a higher chance of surviving in the group than being alone. Swarming results in responding to the speed of their peers to avoid collisions within the swarm by communicating with each other while maintaining a decentralized network and exhibiting self-organized behavior. The goal of these creatures in swarms is basically to ensure the process of solving problems more efficiently through cooperation and division of labor which is being modified and infused into swarm robotic technology.
 
 <div class="figure">
-<img src="../figs/swarms" alt="Examples of diverse creatures in swarms" width="415" />
+<img src="../figs/swarms.png" alt="Examples of diverse creatures in swarms" width="415" />
 <p class="caption">Figure 1.1 Examples of diverse creatures in swarms
 	<span class="citation"></span><span data-label="fig:swarms"></span></p>
 </div>
@@ -82,14 +82,14 @@ The Virtual Fixture System which was invented by Armstrong Laboratory located in
 <br><b>Figure 1.2 Milgram’s Reality–Virtuality continuum</b><br><br>
 
 <div class="figure">
-<img src="/figs/RV-continuum" alt="Milgram’s Reality–Virtuality continuum" width="377" />
+<img src="./figs/RV-continuum.png" alt="Milgram’s Reality–Virtuality continuum" width="377" />
 <p class="caption">Figure 1.2 Milgram’s Reality–Virtuality continuum<span data-label="fig:RV_continuum"></span></p>
 </div>
 
 When it comes to Mixed Reality (MR), it has been originally derived from Virtual Reality (VR) not only conceptually but historically as well. Here, both the physical environment around them and digital elements presented are distinguished by users, for example, the use of semitransparent displays. When designing MR systems, users are provided with the illusion that digital objects are in the same space as physical ones. By sensing those physical interactions, it provides interactive feedback to the users.
 
 <div class="figure">
-<img src="/figs/realities" alt="Milgram’s continuum with examples from Media Convergence Laboratory projects.  Left to right: Physical reality, Augmented reality, Augmented virtuality, Virtual reality" width="453" />
+<img src="/figs/realities.png" alt="Milgram’s continuum with examples from Media Convergence Laboratory projects.  Left to right: Physical reality, Augmented reality, Augmented virtuality, Virtual reality" width="453" />
 <p class="caption">Figure 1.3 Milgram’s continuum with examples from Media Convergence Laboratory projects. <span class="citation"></span> Left to right: Physical reality, Augmented reality, Augmented virtuality, Virtual reality<span data-label="fig:realities"></span></p>
 </div>
 
