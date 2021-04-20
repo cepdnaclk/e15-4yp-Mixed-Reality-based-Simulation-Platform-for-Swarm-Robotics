@@ -10,3 +10,9 @@
 [submodule "sandbox"]
 	path = sandbox
 	url = https://github.com/Pera-Swarm/sandbox
+[submodule "visualizer-ar"]
+	path = visualizer-ar
+	url = https://github.com/Pera-Swarm/visualizer-ar
+[submodule "localization"]
+	path = localization
+	url = https://github.com/Pera-Swarm/localization

@@ -28,5 +28,12 @@
     }
   ],
   "description": "The main objective of this project is to implement a mixed reality-based simulator application with an efficient and reliable architecture for allowing both physical and virtual robots to collaboratively run swarm intelligence based algorithms in real-time",
-  "tags": ["Swarm Robotics", "Research", "Simulation"]
+  "tags": ["Swarm Robotics", "Research", "Simulation"],
+  "media": [
+    {
+      "type": "youtube",
+      "title": "Color Ripple Experiment",
+      "url": "https://www.youtube.com/embed/MwUPTypFgas"
+    }
+  ]
 }
