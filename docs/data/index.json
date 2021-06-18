@@ -1,39 +1,54 @@
 {
-  "title": "Mixed reality based simulation platform for Swarm Robotics",
-  "team": [
-    {
-      "name": "Jaliyagoda A.J.N.M.",
-      "email": "nuwanjaliyagoda@eng.pdn.ac.lk",
-      "eNumber": "E/15/140"
-    },
-    {
-      "name": "Jayalath A.H.G.D.",
-      "email": "ganindudananja@gmail.com",
-      "eNumber": "E/15/142"
-    },
-    {
-      "name": "Karunarathna S.D.D.D.",
-      "email": "dinelkadilshani95@gmail.com",
-      "eNumber": "E/15/173"
-    }
-  ],
-  "supervisors": [
-    {
-      "name": "Dr. Isuru Nawinne",
-      "email": "isurunawinne@eng.pdn.ac.lk"
-    },
-    {
-      "name": "Prof. Roshan Ragel",
-      "email": "roshanr@eng.pdn.ac.lk"
-    }
-  ],
-  "description": "The main objective of this project is to implement a mixed reality-based simulator application with an efficient and reliable architecture for allowing both physical and virtual robots to collaboratively run swarm intelligence based algorithms in real-time",
-  "tags": ["Swarm Robotics", "Research", "Simulation"],
-  "media": [
-    {
-      "type": "youtube",
-      "title": "Color Ripple Experiment",
-      "url": "https://www.youtube.com/embed/MwUPTypFgas"
-    }
-  ]
+    "title": "Mixed Reality based Simulation Platform for Swarm Robotics",
+    "team": [
+        {
+            "name": "Jaliyagoda A.J.N.M.",
+            "email": "nuwanjaliyagoda@eng.pdn.ac.lk",
+            "eNumber": "E/15/140",
+            "github_profile": "https://github.com/NuwanJ",
+            "linkedin_profile": "https://www.linkedin.com/in/nuwan-jaliyagoda/",
+            "website":"https://test.nuwanjaliyagoda.com/"
+        },
+        {
+            "name": "Jayalath A.H.G.D.",
+            "email": "ganindudananja@gmail.com",
+            "eNumber": "E/15/142",
+            "github_profile": "https://github.com/luk3sky",
+            "linkedin_profile": "#",
+            "website":"https://luk3sky.github.io/"
+        },
+        {
+            "name": "Karunarathna S.D.D.D.",
+            "email": "dinelkadilshani95@gmail.com",
+            "eNumber": "E/15/173",
+            "github_profile": "https://github.com/DDilshani",
+            "linkedin_profile": "https://lk.linkedin.com/in/dilshanikarunarathna",
+            "website":"#"
+        }
+    ],
+    "supervisors": [
+        {
+            "name": "Dr. Isuru Nawinne",
+            "email": "isurunawinne@eng.pdn.ac.lk",
+            "linkedin_profile": "https://lk.linkedin.com/in/isuru-nawinne-73302833",
+            "website": "#",
+            "researchgate_profile": "https://www.researchgate.net/profile/Isuru-Nawinne"
+        },
+        {
+            "name": "Prof. Roshan Ragel",
+            "email": "roshanr@eng.pdn.ac.lk",
+            "linkedin_profile": "https://lk.linkedin.com/in/roshanragel",
+            "website": "#",
+            "researchgate_profile": "https://www.researchgate.net/profile/Roshan-Ragel"
+        }
+    ],
+    "description": "The main objective of this project is to implement a mixed reality-based simulator application with an efficient and reliable architecture for allowing both physical and virtual robots to collaboratively run swarm intelligence based algorithms in real-time",
+    "tags": ["Swarm Robotics", "Research", "Simulation", "Mixed Reality"],
+    "media": [
+        {
+            "type": "youtube",
+            "title": "Color Ripple Experiment",
+            "url": "https://www.youtube.com/embed/MwUPTypFgas"
+        }
+    ]
 }
