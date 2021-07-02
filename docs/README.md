@@ -1,10 +1,3 @@
----
-layout: home
-permalink: index.html
-repository-name: e15-4yp-mixed-reality-simulator-for-swarm-robotics
-title: Mixed Reality based Simulation Platform for Swarm Robotics
----
-
 ## Mixed reality based simulation platform for Swarm Robotics
 
 #### Team
@@ -576,8 +569,8 @@ Moreover, the work could be further expanded to integrate augmented reality envi
 ## Links and References
 
 - [Pera-swarm - GitHub Organization](https://github.com/pera-swarm){:target="\_blank"}
-- [Project Repository](https://github.com/cepdnaclk/{{ page.repository-name }}){:target="\_blank"}
-- [Project Page](https://cepdnaclk.github.io/{{ page.repository-name}}){:target="\_blank"}
+- [Project Repository](https://github.com/cepdnaclk/e15-4yp-mixed-reality-simulator-for-swarm-robotics){:target="\_blank"}
+- [Project Page](https://cepdnaclk.github.io/e15-4yp-mixed-reality-simulator-for-swarm-robotics){:target="\_blank"}
 - [Department of Computer Engineering](http://www.ce.pdn.ac.lk/){:target="\_blank"}
 - [University of Peradeniya](https://eng.pdn.ac.lk/){:target="\_blank"}
 
